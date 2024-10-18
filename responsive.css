@@ -8,19 +8,20 @@
     .sidebar{
         display: none;
         min-width: 50vh;
-        min-height: 72vh;
+        min-height: 80vh;
         background-color: black;
+        top: 3rem !important;
     }
     .main{
-        min-width: 95%;
-        margin-right: 1rem;
+        min-width: 100%;
+        padding: 1.5rem;
     }
     .account img{
         display: block;
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .navbar a{
         display: none !important;
     }
@@ -31,6 +32,9 @@
         padding: 1rem !important;
         margin: 0;
         min-width: 100% !important;
+    }
+    .about{
+        margin-top: 2.5rem !important;
     }
     .contact-page p{
         font-size: 1rem

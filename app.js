@@ -25,14 +25,15 @@ function showSidebar()
   }
 }
 
-function menubtn() {
-  const navbar = document.querySelector(".responsive-navbar");
+function menuBtn() 
+{
   var menu = document.getElementById("menu");
-  if (navbar.style.display === "flex") {
-    navbar.style.display = "none";
+  const nav = document.querySelector('.navbar-responsive');
+  if(nav.style.display == "flex") {
+    nav.style.display = "none";
     menu.src = "./Assets/menu.png";
   } else {
-    navbar.style.display = "flex";
+    nav.style.display = "flex";
     menu.src = "./Assets/close.png";
   }
 }

@@ -93,6 +93,9 @@ section a {
   background: transparent;
   backdrop-filter: blur(10px);
   width: max-content;
+  left: auto !important;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 2rem;
 }
 .account img{
   display: none;
@@ -101,30 +104,30 @@ section a {
   height: 2.4rem;
   cursor:pointer;
 }
-.navbar a {
+.navbar a, .navbar-responsive a{
   text-decoration: none;
-  text-align: end;
   color: white;
   margin: 1rem;
   font-size: 1.4rem;
 }
-.responsive-navbar{
+.navbar-responsive{
   display: none;
-  flex-direction:column;
-  background-color: rgba(19, 19, 21, 0.9);
-}
-.responsive-navbar a{
-  text-decoration: none;
+  min-width: 30vh;
+  max-height: 55vh;
+  background-color: black;
+  flex-direction:column !important;
+  top: 4rem !important;
+  left: auto !important;
   text-align: center;
   color: white;
-  margin: .5rem;
-  font-size: 1.2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 .menu{
   display: none;
   height: 2.5rem;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 2rem;
 }
@@ -132,6 +135,7 @@ section a {
 .about {
   text-align: justify;
   font-size: 1em;
+  margin-top: 3rem;
 }
 .portfolio-card{
   display: flex;
