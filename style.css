@@ -47,6 +47,7 @@ section .image {
 }
 hr {
   margin-bottom: 0 !important;
+  color:#0ef !important;
 }
 section p {
   margin: 0;
@@ -90,7 +91,6 @@ section a {
 }
 .navbar {
   flex-direction: row;
-  background: transparent;
   backdrop-filter: blur(10px);
   width: max-content;
   left: auto !important;
