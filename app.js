@@ -2,15 +2,6 @@ function openPDF() {
   window.open("./Assets/Randhir_res.pdf", "_blank");
 }
 
-// function showSidebar() {
-//   const sidebar = document.querySelector(".sidebar");
-//   if(sidebar.style.display === "block"){
-//   sidebar.style.display = "none";
-//   }
-//   else{
-//     sidebar.style.display = "block";
-//   }
-// }
 function showSidebar()
 {
   var account = document.getElementById("account");
