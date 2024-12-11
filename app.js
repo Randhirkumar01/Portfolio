@@ -2,29 +2,20 @@ function openPDF() {
   window.open("./Assets/Randhir_res.pdf", "_blank");
 }
 
-function showSidebar()
-{
-  var account = document.getElementById("account");
+function showSidebar() {
+  const accountIcon = document.getElementById("account");
   const sidebar = document.querySelector(".sidebar");
-  if(sidebar.style.display === "block"){
-    sidebar.style.display = "none";
-    account.src = "./Assets/icons8-account-80.png";
-  }
-  else{
-    sidebar.style.display = "block";
-    account.src = "./Assets/close.png";
-  }
+  const isSidebarVisible = sidebar.style.display === "block";
+
+  sidebar.style.display = isSidebarVisible ? "none" : "block";
+  accountIcon.src = isSidebarVisible ? "./Assets/icons8-account-80.png" : "./Assets/close.png";
 }
 
-function menuBtn() 
-{
-  var menu = document.getElementById("menu");
-  const nav = document.querySelector('.navbar-responsive');
-  if(nav.style.display == "flex") {
-    nav.style.display = "none";
-    menu.src = "./Assets/menu.png";
-  } else {
-    nav.style.display = "flex";
-    menu.src = "./Assets/close.png";
-  }
+function menuBtn() {
+  const menuIcon = document.getElementById("menu");
+  const navBar = document.querySelector('.navbar-responsive');
+  const isNavBarVisible = navBar.style.display === "flex";
+
+  navBar.style.display = isNavBarVisible ? "none" : "flex";
+  menuIcon.src = isNavBarVisible ? "./Assets/menu.png" : "./Assets/close.png";
 }

@@ -47,7 +47,7 @@ section .image {
 }
 hr {
   margin-bottom: 0 !important;
-  color:#0ef !important;
+  color: #0ef !important;
 }
 section p {
   margin: 0;
@@ -97,25 +97,26 @@ section a {
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 2rem;
 }
-.account img{
+.account img {
   display: none;
   margin: 1rem 0 0 1rem;
   width: 2.5rem;
   height: 2.4rem;
-  cursor:pointer;
+  cursor: pointer;
 }
-.navbar a, .navbar-responsive a{
+.navbar a,
+.navbar-responsive a {
   text-decoration: none;
   color: white;
   margin: 1rem;
   font-size: 1.4rem;
 }
-.navbar-responsive{
+.navbar-responsive {
   display: none;
   min-width: 30vh;
   max-height: 55vh;
   background-color: black;
-  flex-direction:column !important;
+  flex-direction: column !important;
   top: 4rem !important;
   left: auto !important;
   text-align: center;
@@ -123,7 +124,7 @@ section a {
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
-.menu{
+.menu {
   display: none;
   height: 2.5rem;
   cursor: pointer;
@@ -136,13 +137,14 @@ section a {
   text-align: justify;
   font-size: 1em;
   margin-top: 3rem;
+  color: #fff;
 }
-.portfolio-card{
+.portfolio-card {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap:0;
+  gap: 0;
   margin-top: 2.5rem;
 }
 
@@ -164,10 +166,12 @@ section a {
 }
 
 /* Projects */
-.project{
+.project {
   margin: 2rem 0;
 }
-.project h3, .portfolio h3, .about h3{
+.project h3,
+.portfolio h3,
+.about h3 {
   position: relative;
   width: max-content;
 }
