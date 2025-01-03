@@ -15,7 +15,7 @@
 .sidebar {
   background-color: rgba(19, 19, 21, 0.9);
   color: rgb(255, 255, 255);
-  min-height: 95vh;
+  height: 90vh;
   max-width: 25%;
   margin: 1rem;
   border-radius: 1rem;
@@ -28,6 +28,7 @@
 }
 .title img {
   max-width: 150px;
+  height: 150px;
   border-radius: 20%;
   margin-top: 0.3rem;
 }
@@ -61,8 +62,8 @@ section a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 4.5rem !important;
+  gap: 2rem !important;
+  margin-top: 1.5rem !important;
 }
 .social a {
   font-size: 1.5rem;
