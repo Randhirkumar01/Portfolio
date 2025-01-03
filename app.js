@@ -3,18 +3,18 @@ function openPDF() {
 }
 
 function showSidebar() {
-  const accountIcon = document.getElementById("account");
-  const sidebar = document.querySelector(".sidebar");
-  const isSidebarVisible = sidebar.style.display === "block";
+  let accountIcon = document.getElementById("account");
+  let sidebar = document.querySelector(".sidebar");
+  let isSidebarVisible = sidebar.style.display === "block";
 
   sidebar.style.display = isSidebarVisible ? "none" : "block";
-  accountIcon.src = isSidebarVisible ? "./Assets/icons8-account-80.png" : "./Assets/close.png";
+  accountIcon.src = isSidebarVisible ? "./Assets/briefcase-solid.svg" : "./Assets/close.png";
 }
 
 function menuBtn() {
-  const menuIcon = document.getElementById("menu");
-  const navBar = document.querySelector('.navbar-responsive');
-  const isNavBarVisible = navBar.style.display === "flex";
+  let menuIcon = document.getElementById("menu");
+  let navBar = document.querySelector('.navbar-responsive');
+  let isNavBarVisible = navBar.style.display === "flex";
 
   navBar.style.display = isNavBarVisible ? "none" : "flex";
   menuIcon.src = isNavBarVisible ? "./Assets/menu.png" : "./Assets/close.png";
